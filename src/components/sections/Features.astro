@@ -1,10 +1,7 @@
 ---
-import { Image } from "astro:assets";
 import Container from "../shared/Container.astro";
-import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
 
-import myImage from "../../assets/images/dev-with-c-1.webp";
 import GradiantText from "../shared/GradiantText.astro";
 
 type FeatureProps = {
@@ -13,64 +10,64 @@ type FeatureProps = {
 };
 const features = [
   {
-    title: "Advanced Analytics",
+    title: "Tecnología de Última Generación",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Nuestro laboratorio cuenta con equipos modernos y tecnología avanzada para garantizar resultados precisos y confiables.",
   },
   {
-    title: "Targeted Ad Campaigns",
+    title: "Entrega Rápida de Resultados",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Brindamos resultados en el menor tiempo posible, con opciones de entrega en línea, por correo electrónico o retiro en nuestras instalaciones.",
   },
   {
-    title: "Content Calendar Management",
+    title: "Servicio de Toma de Muestras a Domicilio",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Ofrecemos la comodidad de realizar sus análisis sin salir de casa con nuestro servicio de toma de muestras a domicilio.",
   },
   {
-    title: "Influencer Collaborations",
+    title: "Atención Personalizada",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Nuestro equipo de especialistas está disponible para responder sus dudas y brindarle asesoría antes y después de sus exámenes.",
   },
   {
-    title: "Customized Reporting",
+    title: "Resultados Seguros y Confidenciales",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Garantizamos la confidencialidad de sus datos y resultados mediante estrictos protocolos de seguridad.",
   },
   {
-    title: "A/B Testing",
+    title: "Variedad de Pruebas de Laboratorio",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Realizamos análisis clínicos, pruebas hormonales, estudios microbiológicos, pruebas COVID-19, perfil lipídico, entre otros.",
   },
   {
-    title: "Social Listening",
+    title: "Facilidad de Agendamiento",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Programe su cita de manera rápida y sencilla a través de nuestra página web, por teléfono o en nuestras instalaciones.",
   },
   {
-    title: "Trend Analysis",
+    title: "Normas y Certificaciones de Calidad",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Cumplimos con altos estándares de calidad y certificaciones nacionales e internacionales para asegurar resultados precisos.",
   },
   {
-    title: "24/7 Customer Support",
+    title: "Atención 24/7 en Línea",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Contamos con atención en línea para resolver sus inquietudes y ayudarle a interpretar sus resultados en cualquier momento.",
   },
   {
-    title: "Cross-Platform Integration",
+    title: "Alianzas con Seguros Médicos",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Trabajamos con diversas aseguradoras para brindarle opciones de cobertura en sus análisis de laboratorio.",
   },
   {
-    title: "Dynamic Content Personalization",
+    title: "Historial de Resultados en Línea",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Acceda a su historial de pruebas y resultados en cualquier momento a través de nuestro portal web seguro.",
   },
   {
-    title: "Competitor Analysis and Benchmarking",
+    title: "Promociones y Paquetes Preventivos",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "Ofrecemos paquetes de salud con descuentos especiales para chequeos preventivos y análisis completos.",
   },
 ];
 
@@ -85,13 +82,10 @@ const { className } = Astro.props;
   <Container className="">
     <div class="text-center max-w-3xl mx-auto">
       <Title>
-        We provide <GradiantText>Important <br />Features</GradiantText> for Digital
-        Marketing
+        Ofrecemos <GradiantText>Servicios <br />Clínicos</GradiantText> de Alta Calidad
       </Title>
     </div>
     <div class="flex flex-row flex-wrap mt-8">
-      <!-- <div class="flex flex-col lg:gap-10 lg:gap-12 midmd:flex-row mt-8"> -->
-      <!-- <div class="flex  lg:w-1/2 flex-row"> -->
       {
         features.map((feature: FeatureProps) => {
           return (
